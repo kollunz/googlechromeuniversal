@@ -2,7 +2,7 @@
 #Download and install latest google Chrome
 
 # pop up notification to user that Chrome is being Updated and will automatically launch itself
-/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -windowType utility -description "Google Chrome is updating, it will relaunch itself please wait..." -button1 "Okay"
+/Library/Application\ Support/JAMF/bin/jamfHelper.app/Contents/MacOS/jamfHelper -windowType utility -description "A Google Chrome update is available, please hit Update to begin. Chrome will restart itself when the update is complete." -button1 "Update"
 # Stop Chrome and delete existing copy
 killall "Google Chrome"
 rm -rf /Applications/Google\ Chrome.app
