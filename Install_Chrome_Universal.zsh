@@ -1,5 +1,9 @@
 #!/bin/zsh
-# Changed the installer from .dmg to .pkg and took out the bit for choosing an architecture.
+#Download and install latest google Chrome
+
+# Stop Chrome and delete existing copy
+killall "Google Chrome"
+rm -rf /Applications/Google\ Chrome.app
 
 # make temp folder for downloads
 
@@ -25,4 +29,7 @@ sudo rm -rf "/tmp/googlechrome"
 
 xattr -rc "/Applications/Google Chrome.app"
 
-exit -0
+#Open Chrome
+open /Applications/Google\ Chrome.app
+
+exit 0
