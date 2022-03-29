@@ -24,3 +24,5 @@ sudo rm -rf "/tmp/googlechrome"
 #Bless Google Chrome app
 
 xattr -rc "/Applications/Google Chrome.app"
+
+exit -0
